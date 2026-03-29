@@ -1,0 +1,44 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 217 19% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 217 19% 10%;
+    --primary: 187 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 14% 95%;
+    --secondary-foreground: 217 19% 10%;
+    --muted: 210 14% 95%;
+    /* TĂNG TƯƠNG PHẢN CHỮ XÁM */
+    --muted-foreground: 215.4 16.3% 35%;
+    --accent: 187 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --border: 210 14% 95%;
+    --radius: 0.75rem;
+  }
+
+  html {
+    scroll-behavior: smooth; /* Cuộn trang mượt mà */
+  }
+
+  ::selection {
+    background-color: #00E5FF; /* Màu bôi đen chữ tone-sur-tone */
+    color: white;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; }
+  img { 
+    @apply max-w-full h-auto object-cover;
+    image-rendering: -webkit-optimize-contrast; 
+  }
+}
