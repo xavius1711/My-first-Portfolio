@@ -20,7 +20,7 @@ export default function BlogEditor() {
   const [errorMsg, setErrorMsg] = useState("");
 
   // KIỂM TRA QUYỀN ADMIN: Thay email của bạn vào đây
-  const ADMIN_EMAIL = "your-email@gmail.com"; 
+  const ADMIN_EMAIL = "xavius1707@gmail.com"; 
   const isAdmin = user?.primaryEmailAddress?.emailAddress === ADMIN_EMAIL;
 
   // Chờ Clerk tải thông tin người dùng
